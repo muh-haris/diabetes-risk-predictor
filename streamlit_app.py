@@ -14,7 +14,7 @@ st.set_page_config(
 # For local use, call FastAPI on port 8000.
 # On Streamlit Community Cloud, set API_URL in the app's Secrets settings
 # to the public HTTPS URL of your deployed FastAPI service.
-API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000").rstrip("/")
+API_URL = os.environ.get("API_URL", "https://bountiful-numerous-gulf.ngrok-free.dev").rstrip("/")
 
 st.title("🩺 Diabetes Risk Predictor")
 st.write(
